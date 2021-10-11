@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="18" time="198.032">
+    <testcase classname="DemoBlaze Buy Function" name="Test AddTo Cart Button" time="16.181">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;tbodyid&quot;]/div[1]/div/div/h4/a&quot;}&#10;  (Session info: chrome=94.0.4606.81)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'LAPTOP-2T0C603P', ip: '192.168.225.147', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\ADARSH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52084}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 39419de0b11900e629691b2b114eeff9&#10;*** Element info: {Using=xpath, value=//*[@id=&quot;tbodyid&quot;]/div[1]/div/div/h4/a}" type="org.openqa.selenium.NoSuchElementException">
+            <![CDATA[Given User is on HomePage...................................................passed
+When User Selects Product...................................................failed
+Then User Clicks AddCart Button.............................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="tbodyid"]/div[1]/div/div/h4/a"}
+  (Session info: chrome=94.0.4606.81)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-2T0C603P', ip: '192.168.225.147', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\ADARSH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52084}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 39419de0b11900e629691b2b114eeff9
+*** Element info: {Using=xpath, value=//*[@id="tbodyid"]/div[1]/div/div/h4/a}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.pages.BuyPage.selectItem(BuyPage.java:61)
+	at DemoStepDef.BuyItem.user_selects_product(BuyItem.java:34)
+	at ✽.User Selects Product(file:///C:/Users/Adarsh2299/eclipse-workspace/DemoBlaze/./src/test/java/DemoFeatures/Buy.feature:7)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="DemoBlaze Buy Function" name="Test Buy PopUp Window" time="9.727">
+        <system-out>
+            <![CDATA[Given User is into cart.....................................................passed
+When User clicks PlaceOrder.................................................passed
+Then User Gets Popup For Details............................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="DemoBlaze Buy Function" name="Test online Payment Fuction" time="13.372">
+        <system-out>
+            <![CDATA[Given User is on cart and Clicks PlaceOrder.................................passed
+When User is on Popup Details of buy item...................................passed
+And User Enters Name........................................................passed
+And User Enters Country.....................................................passed
+And User Enters City........................................................passed
+And User Enters CreditCard..................................................passed
+And User Enters Month.......................................................passed
+And User Enters Year........................................................passed
+Then User Clicks Purchase...................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="DemoBlaze Buy Function" name="Test Buy Fuction for Invalid CreditCard" time="9.504">
+        <system-out>
+            <![CDATA[Given User is on cart and Clicks PlaceOrder.................................passed
+When User Enters Name.......................................................passed
+And User Enters Country.....................................................passed
+And User Enters City........................................................passed
+And User Enters Invalid CreditCard..........................................passed
+And User Enters Month.......................................................passed
+And User Enters Year........................................................passed
+Then User Clicks Purchase...................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="DemoBlaze Buy Function" name="Test Buy Fuction for Invalid Address" time="7.476">
+        <system-out>
+            <![CDATA[Given User is on cart and Clicks PlaceOrder.................................passed
+When User Enters Name.......................................................passed
+And User Enters  Invalid Country............................................passed
+And User Enters Invalid City................................................passed
+And User Enters Invalid CreditCard..........................................passed
+And User Enters Month.......................................................passed
+And User Enters Year........................................................passed
+Then User Clicks Purchase...................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="DemoBlaze Confirm booking Functionality" name="To validate the sucessful Navigation to Demo_blaze Confirm booking page." time="0.001">
+        <system-out>
+            <![CDATA[Given User is into confirm booking..........................................passed
+When User clicks Confirm Booking Button.....................................passed
+Then User Gets Popup shows order is booked..................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="DemoBlaze Login Functionality" name="To validate the successfully Navigation to Demo_blaze Login page" time="13.705">
+        <system-out>
+            <![CDATA[Given l-User enters DemoBlaze url...........................................passed
+Then l-User should be able to navigate to url successfully..................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="DemoBlaze Login Functionality" name="Test Login Functionality" time="19.457">
+        <system-out>
+            <![CDATA[Given l-User is on Login Page...............................................passed
+When l-User enters test and test............................................passed
+And l-User clicks on Login Button...........................................passed
+Then l-User should be able to Login successfully test.......................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="DemoBlaze Login Functionality" name="Test Login Functionality 2" time="18.669">
+        <system-out>
+            <![CDATA[Given l-User is on Login Page...............................................passed
+When l-User enters admin and admin..........................................passed
+And l-User clicks on Login Button...........................................passed
+Then l-User should be able to Login successfully admin......................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="DemoBlaze Login Functionality" name="Test Login Functionality with invalid data." time="13.411">
+        <system-out>
+            <![CDATA[Given l-User is on Login Page...............................................passed
+When l-User enters test and test12..........................................passed
+And l-User clicks on Login Button...........................................passed
+Then l-User should be not able to Login successfully........................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="DemoBlaze Login Functionality" name="Test Login Functionality with invalid data. 2" time="10.302">
+        <system-out>
+            <![CDATA[Given l-User is on Login Page...............................................passed
+When l-User enters admin and admin12........................................passed
+And l-User clicks on Login Button...........................................passed
+Then l-User should be not able to Login successfully........................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="DemoBlaze Registration Functionality" name="To validate the sucessful Navigation to Demo_blaze Signup page" time="4.878">
+        <system-out>
+            <![CDATA[Given r-User enters DemoBlaze url...........................................passed
+Then r-User should be able to navigate to url successfully..................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="DemoBlaze Registration Functionality" name="Test Registration Functionality" time="8.756">
+        <system-out>
+            <![CDATA[Given r-User is on Registration Page........................................passed
+When r-User enters test and test123.........................................passed
+And r-User clicks on Signup Button..........................................passed
+Then r-User should be able to Register successfully.........................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="DemoBlaze Registration Functionality" name="Test Registration Functionality 2" time="11.159">
+        <system-out>
+            <![CDATA[Given r-User is on Registration Page........................................passed
+When r-User enters abc and abc123...........................................passed
+And r-User clicks on Signup Button..........................................passed
+Then r-User should be able to Register successfully.........................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="DemoBlaze Search Functionality" name="To validate that user can filter products by PHONE category" time="7.296">
+        <system-out>
+            <![CDATA[Given User is on homepage...................................................passed
+When User clicks on Phone category..........................................passed
+Then User should be able to successfully filter products by PHONE category..passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="DemoBlaze Search Functionality" name="To validate that user can filter products by LAPTOP category" time="7.226">
+        <system-out>
+            <![CDATA[Given User is on homepage...................................................passed
+When User clicks on LAPTOP category.........................................passed
+Then User should be able to successfully filter products by LAPTOP category..passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="DemoBlaze Search Functionality" name="To validate that user can filter products by MONITORS category" time="9.635">
+        <system-out>
+            <![CDATA[Given User is on homepage...................................................passed
+When User clicks on MONITOR category........................................passed
+Then User should be able to successfully filter products by MONITORS category..passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="DemoBlaze Search Functionality" name="To validate that add to cart button is functional." time="16.728">
+        <system-out>
+            <![CDATA[Given User is on homepage...................................................passed
+When User clicks on a product...............................................passed
+And User clicks on add to cart button.......................................passed
+And User clicks on cart button..............................................passed
+Then User should be able to successfully see the product in their cart......passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>

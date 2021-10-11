@@ -1,0 +1,1622 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-10-11T07:34:14.999Z",
+        "line": 5,
+        "name": "Test AddTo Cart Button",
+        "description": "",
+        "id": "demoblaze-buy-function;test-addto-cart-button",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 13868836200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User is on HomePage",
+            "match": {
+              "location": "DemoStepDef.BuyItem.user_is_on_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id\u003d\"tbodyid\"]/div[1]/div/div/h4/a\"}\n  (Session info: chrome\u003d94.0.4606.81)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027LAPTOP-2T0C603P\u0027, ip: \u0027192.168.225.147\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\\Users\\ADARSH~1\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:52084}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 39419de0b11900e629691b2b114eeff9\n*** Element info: {Using\u003dxpath, value\u003d//*[@id\u003d\"tbodyid\"]/div[1]/div/div/h4/a}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat com.pages.BuyPage.selectItem(BuyPage.java:61)\r\n\tat DemoStepDef.BuyItem.user_selects_product(BuyItem.java:34)\r\n\tat ✽.User Selects Product(file:///C:/Users/Adarsh2299/eclipse-workspace/DemoBlaze/./src/test/java/DemoFeatures/Buy.feature:7)\r\n",
+              "duration": 2243310900,
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "User Selects Product",
+            "match": {
+              "location": "DemoStepDef.BuyItem.user_selects_product()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "User Clicks AddCart Button",
+            "match": {
+              "location": "DemoStepDef.BuyItem.user_clicks_add_cart_button()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@buy"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-11T07:34:31.266Z",
+        "line": 10,
+        "name": "Test Buy PopUp Window",
+        "description": "",
+        "id": "demoblaze-buy-function;test-buy-popup-window",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5566424700,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User is into cart",
+            "match": {
+              "location": "DemoStepDef.BuyItem.user_is_into_cart()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2088181400,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User clicks PlaceOrder",
+            "match": {
+              "location": "DemoStepDef.BuyItem.user_clicks_place_order()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2072437600,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User Gets Popup For Details",
+            "match": {
+              "location": "DemoStepDef.BuyItem.user_gets_popup_for_details()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@buy"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-11T07:34:41.007Z",
+        "line": 15,
+        "name": "Test online Payment Fuction",
+        "description": "",
+        "id": "demoblaze-buy-function;test-online-payment-fuction",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5571505700,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User is on cart and Clicks PlaceOrder",
+            "match": {
+              "location": "DemoStepDef.BuyItem.user_is_on_cart_and_clicks_purchase1()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1992300,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User is on Popup Details of buy item",
+            "match": {
+              "location": "DemoStepDef.BuyItem.user_is_on_popup_details_of_buy_item()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2199838300,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User Enters Name",
+            "match": {
+              "location": "DemoStepDef.BuyItem.user_enters_name()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1154829000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User Enters Country",
+            "match": {
+              "location": "DemoStepDef.BuyItem.user_enters_country()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1112561000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User Enters City",
+            "match": {
+              "location": "DemoStepDef.BuyItem.user_enters_city()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1091761200,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User Enters CreditCard",
+            "match": {
+              "location": "DemoStepDef.BuyItem.user_enters_credit_card()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 153772100,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "User Enters Month",
+            "match": {
+              "location": "DemoStepDef.BuyItem.user_enters_month()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 114691800,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "User Enters Year",
+            "match": {
+              "location": "DemoStepDef.BuyItem.user_enters_year()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1962934800,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "User Clicks Purchase",
+            "match": {
+              "location": "DemoStepDef.BuyItem.user_clicks_purchase()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@buy"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-11T07:34:54.396Z",
+        "line": 28,
+        "name": "Test Buy Fuction for Invalid CreditCard",
+        "description": "",
+        "id": "demoblaze-buy-function;test-buy-fuction-for-invalid-creditcard",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5790809600,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "User is on cart and Clicks PlaceOrder",
+            "match": {
+              "location": "DemoStepDef.BuyItem.user_is_on_cart_and_clicks_purchase1()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1118567000,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "User Enters Name",
+            "match": {
+              "location": "DemoStepDef.BuyItem.user_enters_name()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1099124200,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "User Enters Country",
+            "match": {
+              "location": "DemoStepDef.BuyItem.user_enters_country()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1098370800,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "User Enters City",
+            "match": {
+              "location": "DemoStepDef.BuyItem.user_enters_city()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 103722500,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "User Enters Invalid CreditCard",
+            "match": {
+              "location": "DemoStepDef.BuyItem.user_enters_invalid_credit_card()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 113592200,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "User Enters Month",
+            "match": {
+              "location": "DemoStepDef.BuyItem.user_enters_month()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 128652500,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "User Enters Year",
+            "match": {
+              "location": "DemoStepDef.BuyItem.user_enters_year()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 45871400,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "User Clicks Purchase",
+            "match": {
+              "location": "DemoStepDef.BuyItem.user_clicks_purchase()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@buy"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-11T07:35:03.908Z",
+        "line": 38,
+        "name": "Test Buy Fuction for Invalid Address",
+        "description": "",
+        "id": "demoblaze-buy-function;test-buy-fuction-for-invalid-address",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5660824000,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "User is on cart and Clicks PlaceOrder",
+            "match": {
+              "location": "DemoStepDef.BuyItem.user_is_on_cart_and_clicks_purchase1()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1148909600,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "User Enters Name",
+            "match": {
+              "location": "DemoStepDef.BuyItem.user_enters_name()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 116728000,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "User Enters  Invalid Country",
+            "match": {
+              "location": "DemoStepDef.BuyItem.user_enters_invalid_country()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 116686600,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "User Enters Invalid City",
+            "match": {
+              "location": "DemoStepDef.BuyItem.user_enters_invalid_city()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 127035300,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "User Enters Invalid CreditCard",
+            "match": {
+              "location": "DemoStepDef.BuyItem.user_enters_invalid_credit_card()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 113666800,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "User Enters Month",
+            "match": {
+              "location": "DemoStepDef.BuyItem.user_enters_month()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 122638200,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "User Enters Year",
+            "match": {
+              "location": "DemoStepDef.BuyItem.user_enters_year()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 68364800,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "User Clicks Purchase",
+            "match": {
+              "location": "DemoStepDef.BuyItem.user_clicks_purchase()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@buy"
+          }
+        ]
+      }
+    ],
+    "name": "DemoBlaze Buy Function",
+    "description": "",
+    "id": "demoblaze-buy-function",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/DemoFeatures/Buy.feature",
+    "tags": [
+      {
+        "name": "@buy",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-10-11T07:35:11.409Z",
+        "line": 2,
+        "name": "To validate the sucessful Navigation to Demo_blaze Confirm booking page.",
+        "description": "",
+        "id": "demoblaze-confirm-booking-functionality;to-validate-the-sucessful-navigation-to-demo-blaze-confirm-booking-page.",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1002700,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "User is into confirm booking",
+            "match": {
+              "location": "DemoStepDef.ConfirmBooking.user_is_into_confirm_booking()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User clicks Confirm Booking Button",
+            "match": {
+              "location": "DemoStepDef.ConfirmBooking.user_clicks_confirm_booking_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User Gets Popup shows order is booked",
+            "match": {
+              "location": "DemoStepDef.ConfirmBooking.user_gets_popup_shows_order_is_booked()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "DemoBlaze Confirm booking Functionality",
+    "description": "",
+    "id": "demoblaze-confirm-booking-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/DemoFeatures/ConfirmBooking.feature",
+    "tags": []
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-10-11T07:35:11.424Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6393468400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DemoStepDef.LoginStepDef.initial()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "To validate the successfully Navigation to Demo_blaze Login page",
+        "description": "",
+        "id": "demoblaze-login-functionality;to-validate-the-successfully-navigation-to-demo-blaze-login-page",
+        "after": [
+          {
+            "result": {
+              "duration": 890236300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DemoStepDef.LoginStepDef.finish()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5706880100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "l-User enters DemoBlaze url",
+            "match": {
+              "location": "DemoStepDef.LoginStepDef.luser_enters_demoblaze_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 712756800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "l-User should be able to navigate to url successfully",
+            "match": {
+              "location": "DemoStepDef.LoginStepDef.luser_should_be_able_to_navigate_to_url_successfully()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-11T07:35:25.186Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2376554200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DemoStepDef.LoginStepDef.initial()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "Test Login Functionality",
+        "description": "",
+        "id": "demoblaze-login-functionality;test-login-functionality;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 2350576400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DemoStepDef.LoginStepDef.finish()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 6345981400,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "l-User is on Login Page",
+            "match": {
+              "location": "DemoStepDef.LoginStepDef.luser_is_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2991671000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "l-User enters test and test",
+            "match": {
+              "arguments": [
+                {
+                  "val": "test",
+                  "offset": 14
+                },
+                {
+                  "val": "test",
+                  "offset": 23
+                }
+              ],
+              "location": "DemoStepDef.LoginStepDef.luser_enters_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 104075300,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "l-User clicks on Login Button",
+            "match": {
+              "location": "DemoStepDef.LoginStepDef.luser_clicks_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5283838300,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "l-User should be able to Login successfully test",
+            "match": {
+              "arguments": [
+                {
+                  "val": "test",
+                  "offset": 44
+                }
+              ],
+              "location": "DemoStepDef.LoginStepDef.luser_should_be_able_to_login_successfully(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-11T07:35:44.662Z",
+        "before": [
+          {
+            "result": {
+              "duration": 9132750400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DemoStepDef.LoginStepDef.initial()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "Test Login Functionality",
+        "description": "",
+        "id": "demoblaze-login-functionality;test-login-functionality;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 1014063200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DemoStepDef.LoginStepDef.finish()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3996991400,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "l-User is on Login Page",
+            "match": {
+              "location": "DemoStepDef.LoginStepDef.luser_is_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 938405300,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "l-User enters admin and admin",
+            "match": {
+              "arguments": [
+                {
+                  "val": "admin",
+                  "offset": 14
+                },
+                {
+                  "val": "admin",
+                  "offset": 24
+                }
+              ],
+              "location": "DemoStepDef.LoginStepDef.luser_enters_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 162637400,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "l-User clicks on Login Button",
+            "match": {
+              "location": "DemoStepDef.LoginStepDef.luser_clicks_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3422948000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "l-User should be able to Login successfully admin",
+            "match": {
+              "arguments": [
+                {
+                  "val": "admin",
+                  "offset": 44
+                }
+              ],
+              "location": "DemoStepDef.LoginStepDef.luser_should_be_able_to_login_successfully(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-11T07:36:03.347Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3596092300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DemoStepDef.LoginStepDef.initial()"
+            }
+          }
+        ],
+        "line": 25,
+        "name": "Test Login Functionality with invalid data.",
+        "description": "",
+        "id": "demoblaze-login-functionality;test-login-functionality-with-invalid-data.;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 869023100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DemoStepDef.LoginStepDef.finish()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 6416446400,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "l-User is on Login Page",
+            "match": {
+              "location": "DemoStepDef.LoginStepDef.luser_is_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1022104800,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "l-User enters test and test12",
+            "match": {
+              "arguments": [
+                {
+                  "val": "test",
+                  "offset": 14
+                },
+                {
+                  "val": "test12",
+                  "offset": 23
+                }
+              ],
+              "location": "DemoStepDef.LoginStepDef.luser_enters_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 89883800,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "l-User clicks on Login Button",
+            "match": {
+              "location": "DemoStepDef.LoginStepDef.luser_clicks_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1414336800,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "l-User should be not able to Login successfully",
+            "match": {
+              "location": "DemoStepDef.LoginStepDef.luser_should_not_be_able_to_login_successfully()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-11T07:36:16.768Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2038002500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DemoStepDef.LoginStepDef.initial()"
+            }
+          }
+        ],
+        "line": 26,
+        "name": "Test Login Functionality with invalid data.",
+        "description": "",
+        "id": "demoblaze-login-functionality;test-login-functionality-with-invalid-data.;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 800917100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DemoStepDef.LoginStepDef.finish()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4831910100,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "l-User is on Login Page",
+            "match": {
+              "location": "DemoStepDef.LoginStepDef.luser_is_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 935679200,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "l-User enters admin and admin12",
+            "match": {
+              "arguments": [
+                {
+                  "val": "admin",
+                  "offset": 14
+                },
+                {
+                  "val": "admin12",
+                  "offset": 24
+                }
+              ],
+              "location": "DemoStepDef.LoginStepDef.luser_enters_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 113676100,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "l-User clicks on Login Button",
+            "match": {
+              "location": "DemoStepDef.LoginStepDef.luser_clicks_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1579934000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "l-User should be not able to Login successfully",
+            "match": {
+              "location": "DemoStepDef.LoginStepDef.luser_should_not_be_able_to_login_successfully()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          }
+        ]
+      }
+    ],
+    "name": "DemoBlaze Login Functionality",
+    "description": "",
+    "id": "demoblaze-login-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/DemoFeatures/Login.feature",
+    "tags": [
+      {
+        "name": "@login",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-10-11T07:36:27.081Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1419780700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DemoStepDef.RegisterStepDef.initial()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "To validate the sucessful Navigation to Demo_blaze Signup page",
+        "description": "",
+        "id": "demoblaze-registration-functionality;to-validate-the-sucessful-navigation-to-demo-blaze-signup-page",
+        "after": [
+          {
+            "result": {
+              "duration": 709242700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DemoStepDef.RegisterStepDef.finish()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2726140400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "r-User enters DemoBlaze url",
+            "match": {
+              "location": "DemoStepDef.RegisterStepDef.user_enters_demo_blaze_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 23452900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "r-User should be able to navigate to url successfully",
+            "match": {
+              "location": "DemoStepDef.RegisterStepDef.user_should_be_able_to_navigate_to_url_successfully()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@register"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-11T07:36:31.968Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1380390100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DemoStepDef.RegisterStepDef.initial()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "Test Registration Functionality",
+        "description": "",
+        "id": "demoblaze-registration-functionality;test-registration-functionality;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 838295000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DemoStepDef.RegisterStepDef.finish()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4544693000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "r-User is on Registration Page",
+            "match": {
+              "location": "DemoStepDef.RegisterStepDef.user_is_on_registration_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 856305500,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "r-User enters test and test123",
+            "match": {
+              "arguments": [
+                {
+                  "val": "test",
+                  "offset": 14
+                },
+                {
+                  "val": "test123",
+                  "offset": 23
+                }
+              ],
+              "location": "DemoStepDef.RegisterStepDef.user_enters_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 91701000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "r-User clicks on Signup Button",
+            "match": {
+              "location": "DemoStepDef.RegisterStepDef.user_clicks_on_signup_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1044383500,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "r-User should be able to Register successfully",
+            "match": {
+              "location": "DemoStepDef.RegisterStepDef.user_should_be_able_to_register_successfully()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@register"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-11T07:36:40.733Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2786441900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DemoStepDef.RegisterStepDef.initial()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "Test Registration Functionality",
+        "description": "",
+        "id": "demoblaze-registration-functionality;test-registration-functionality;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 826580700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DemoStepDef.RegisterStepDef.finish()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5458900000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "r-User is on Registration Page",
+            "match": {
+              "location": "DemoStepDef.RegisterStepDef.user_is_on_registration_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 898320800,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "r-User enters abc and abc123",
+            "match": {
+              "arguments": [
+                {
+                  "val": "abc",
+                  "offset": 14
+                },
+                {
+                  "val": "abc123",
+                  "offset": 22
+                }
+              ],
+              "location": "DemoStepDef.RegisterStepDef.user_enters_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 135639900,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "r-User clicks on Signup Button",
+            "match": {
+              "location": "DemoStepDef.RegisterStepDef.user_clicks_on_signup_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1051265900,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "r-User should be able to Register successfully",
+            "match": {
+              "location": "DemoStepDef.RegisterStepDef.user_should_be_able_to_register_successfully()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@register"
+          }
+        ]
+      }
+    ],
+    "name": "DemoBlaze Registration Functionality",
+    "description": "",
+    "id": "demoblaze-registration-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/DemoFeatures/Registration.feature",
+    "tags": [
+      {
+        "name": "@register",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-10-11T07:36:51.900Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1807265300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DemoStepDef.SearchStepDef.initial()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "To validate that user can filter products by PHONE category",
+        "description": "",
+        "id": "demoblaze-search-functionality;to-validate-that-user-can-filter-products-by-phone-category",
+        "after": [
+          {
+            "result": {
+              "duration": 1094329600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DemoStepDef.SearchStepDef.finish()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3101444400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on homepage",
+            "match": {
+              "location": "DemoStepDef.SearchStepDef.user_is_on_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 110436700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User clicks on Phone category",
+            "match": {
+              "location": "DemoStepDef.SearchStepDef.user_clicks_on_phone_category()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1181676700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User should be able to successfully filter products by PHONE category.",
+            "match": {
+              "location": "DemoStepDef.SearchStepDef.user_should_be_able_to_successfully_filter_products_by_phone_category()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@search"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-11T07:36:59.209Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1335516900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DemoStepDef.SearchStepDef.initial()"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "To validate that user can filter products by LAPTOP category",
+        "description": "",
+        "id": "demoblaze-search-functionality;to-validate-that-user-can-filter-products-by-laptop-category",
+        "after": [
+          {
+            "result": {
+              "duration": 801022300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DemoStepDef.SearchStepDef.finish()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4902013000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User is on homepage",
+            "match": {
+              "location": "DemoStepDef.SearchStepDef.user_is_on_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 93742100,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User clicks on LAPTOP category",
+            "match": {
+              "location": "DemoStepDef.SearchStepDef.user_clicks_on_laptop_category()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 91883200,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User should be able to successfully filter products by LAPTOP category.",
+            "match": {
+              "location": "DemoStepDef.SearchStepDef.user_should_be_able_to_successfully_filter_products_by_laptop_category()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@search"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-11T07:37:06.443Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2751981800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DemoStepDef.SearchStepDef.initial()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "To validate that user can filter products by MONITORS category",
+        "description": "",
+        "id": "demoblaze-search-functionality;to-validate-that-user-can-filter-products-by-monitors-category",
+        "after": [
+          {
+            "result": {
+              "duration": 902253900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DemoStepDef.SearchStepDef.finish()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4718635600,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User is on homepage",
+            "match": {
+              "location": "DemoStepDef.SearchStepDef.user_is_on_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 99142500,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User clicks on MONITOR category",
+            "match": {
+              "location": "DemoStepDef.SearchStepDef.user_clicks_on_monitor_category()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1162646300,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User should be able to successfully filter products by MONITORS category.",
+            "match": {
+              "location": "DemoStepDef.SearchStepDef.user_should_be_able_to_successfully_filter_products_by_monitors_category()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@search"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-11T07:37:16.085Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1554279600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DemoStepDef.SearchStepDef.initial()"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "To validate that add to cart button is functional.",
+        "description": "",
+        "id": "demoblaze-search-functionality;to-validate-that-add-to-cart-button-is-functional.",
+        "after": [
+          {
+            "result": {
+              "duration": 908235600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DemoStepDef.SearchStepDef.finish()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4102144600,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User is on homepage",
+            "match": {
+              "location": "DemoStepDef.SearchStepDef.user_is_on_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3141239800,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "User clicks on a product",
+            "match": {
+              "location": "DemoStepDef.SearchStepDef.user_clicks_on_a_product()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1777256200,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "User clicks on add to cart button",
+            "match": {
+              "location": "DemoStepDef.SearchStepDef.user_clicks_on_add_to_cart_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3114445100,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "User clicks on cart button",
+            "match": {
+              "location": "DemoStepDef.SearchStepDef.user_clicks_on_cart_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2130101500,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "User should be able to successfully see the product in their cart.",
+            "match": {
+              "location": "DemoStepDef.SearchStepDef.user_should_be_able_to_successfully_see_the_product_in_their_cart()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@search"
+          }
+        ]
+      }
+    ],
+    "name": "DemoBlaze Search Functionality",
+    "description": "",
+    "id": "demoblaze-search-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/DemoFeatures/Search.feature",
+    "tags": [
+      {
+        "name": "@search",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

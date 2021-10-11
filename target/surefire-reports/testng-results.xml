@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="18" passed="17" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-10-11T13:04:14 IST" name="Suite" finished-at="2021-10-11T13:07:34 IST" duration-ms="200290">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:DemoMyRunner.DemoTestRunner@58d75e99]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2021-10-11T13:04:14 IST" name="Test" finished-at="2021-10-11T13:07:34 IST" duration-ms="200290">
+      <class name="DemoMyRunner.DemoTestRunner">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:DemoMyRunner.DemoTestRunner@58d75e99]" started-at="2021-10-11T13:04:14 IST" name="setUpClass" finished-at="2021-10-11T13:04:14 IST" duration-ms="565" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:DemoMyRunner.DemoTestRunner@58d75e99]" started-at="2021-10-11T13:04:14 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-11T13:04:31 IST" duration-ms="16328" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Test AddTo Cart Button"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[DemoBlaze Buy Function]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="tbodyid"]/div[1]/div/div/h4/a"}
+  (Session info: chrome=94.0.4606.81)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-2T0C603P', ip: '192.168.225.147', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\ADARSH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52084}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 39419de0b11900e629691b2b114eeff9
+*** Element info: {Using=xpath, value=//*[@id="tbodyid"]/div[1]/div/div/h4/a}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="tbodyid"]/div[1]/div/div/h4/a"}
+  (Session info: chrome=94.0.4606.81)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-2T0C603P', ip: '192.168.225.147', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\ADARSH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52084}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 39419de0b11900e629691b2b114eeff9
+*** Element info: {Using=xpath, value=//*[@id="tbodyid"]/div[1]/div/div/h4/a}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at com.pages.BuyPage.selectItem(BuyPage.java:61)
+at DemoStepDef.BuyItem.user_selects_product(BuyItem.java:34)
+at ✽.User Selects Product(file:///C:/Users/Adarsh2299/eclipse-workspace/DemoBlaze/./src/test/java/DemoFeatures/Buy.feature:7)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:DemoMyRunner.DemoTestRunner@58d75e99]" started-at="2021-10-11T13:04:31 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-11T13:04:40 IST" duration-ms="9737" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Test Buy PopUp Window"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[DemoBlaze Buy Function]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:DemoMyRunner.DemoTestRunner@58d75e99]" started-at="2021-10-11T13:04:40 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-11T13:04:54 IST" duration-ms="13386" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Test online Payment Fuction"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[DemoBlaze Buy Function]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:DemoMyRunner.DemoTestRunner@58d75e99]" started-at="2021-10-11T13:04:54 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-11T13:05:03 IST" duration-ms="9519" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Test Buy Fuction for Invalid CreditCard"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[DemoBlaze Buy Function]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:DemoMyRunner.DemoTestRunner@58d75e99]" started-at="2021-10-11T13:05:03 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-11T13:05:11 IST" duration-ms="7484" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Test Buy Fuction for Invalid Address"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[DemoBlaze Buy Function]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:DemoMyRunner.DemoTestRunner@58d75e99]" started-at="2021-10-11T13:05:11 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-11T13:05:11 IST" duration-ms="24" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate the sucessful Navigation to Demo_blaze Confirm booking page."]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[DemoBlaze Confirm booking Functionality]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:DemoMyRunner.DemoTestRunner@58d75e99]" started-at="2021-10-11T13:05:11 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-11T13:05:25 IST" duration-ms="13717" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate the successfully Navigation to Demo_blaze Login page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[DemoBlaze Login Functionality]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:DemoMyRunner.DemoTestRunner@58d75e99]" started-at="2021-10-11T13:05:25 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-11T13:05:44 IST" duration-ms="19515" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Test Login Functionality"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[DemoBlaze Login Functionality]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:DemoMyRunner.DemoTestRunner@58d75e99]" started-at="2021-10-11T13:05:44 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-11T13:06:03 IST" duration-ms="18686" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Test Login Functionality"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[DemoBlaze Login Functionality]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:DemoMyRunner.DemoTestRunner@58d75e99]" started-at="2021-10-11T13:06:03 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-11T13:06:16 IST" duration-ms="13425" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Test Login Functionality with invalid data."]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[DemoBlaze Login Functionality]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:DemoMyRunner.DemoTestRunner@58d75e99]" started-at="2021-10-11T13:06:16 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-11T13:06:27 IST" duration-ms="10311" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Test Login Functionality with invalid data."]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[DemoBlaze Login Functionality]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:DemoMyRunner.DemoTestRunner@58d75e99]" started-at="2021-10-11T13:06:27 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-11T13:06:31 IST" duration-ms="4889" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate the sucessful Navigation to Demo_blaze Signup page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[DemoBlaze Registration Functionality]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:DemoMyRunner.DemoTestRunner@58d75e99]" started-at="2021-10-11T13:06:31 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-11T13:06:40 IST" duration-ms="8764" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Test Registration Functionality"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[DemoBlaze Registration Functionality]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:DemoMyRunner.DemoTestRunner@58d75e99]" started-at="2021-10-11T13:06:40 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-11T13:06:51 IST" duration-ms="11166" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Test Registration Functionality"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[DemoBlaze Registration Functionality]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:DemoMyRunner.DemoTestRunner@58d75e99]" started-at="2021-10-11T13:06:51 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-11T13:06:59 IST" duration-ms="7304" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate that user can filter products by PHONE category"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[DemoBlaze Search Functionality]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:DemoMyRunner.DemoTestRunner@58d75e99]" started-at="2021-10-11T13:06:59 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-11T13:07:06 IST" duration-ms="7239" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate that user can filter products by LAPTOP category"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[DemoBlaze Search Functionality]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:DemoMyRunner.DemoTestRunner@58d75e99]" started-at="2021-10-11T13:07:06 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-11T13:07:16 IST" duration-ms="9642" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate that user can filter products by MONITORS category"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[DemoBlaze Search Functionality]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:DemoMyRunner.DemoTestRunner@58d75e99]" started-at="2021-10-11T13:07:16 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-11T13:07:32 IST" duration-ms="16734" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To validate that add to cart button is functional."]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[DemoBlaze Search Functionality]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:DemoMyRunner.DemoTestRunner@58d75e99]" started-at="2021-10-11T13:07:32 IST" name="tearDownClass" finished-at="2021-10-11T13:07:34 IST" duration-ms="1728" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- DemoMyRunner.DemoTestRunner -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

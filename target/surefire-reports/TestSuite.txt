@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 18, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 201.614 s <<< FAILURE! - in TestSuite
+DemoMyRunner.DemoTestRunner.runScenario["Test AddTo Cart Button", "Optional[DemoBlaze Buy Function]"](1)  Time elapsed: 16.412 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="tbodyid"]/div[1]/div/div/h4/a"}
+  (Session info: chrome=94.0.4606.81)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-2T0C603P', ip: '192.168.225.147', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\ADARSH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52084}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 39419de0b11900e629691b2b114eeff9
+*** Element info: {Using=xpath, value=//*[@id="tbodyid"]/div[1]/div/div/h4/a}
+

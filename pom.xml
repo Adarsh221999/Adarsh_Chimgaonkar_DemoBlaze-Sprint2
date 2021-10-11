@@ -1,0 +1,154 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>Demoblaze</groupId>
+	<artifactId>Demoblaze</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<name>Demoblaze</name>
+	<url>http://maven.apache.org</url>
+
+	<dependencies>
+  			<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
+	<dependency>
+   		<groupId>io.cucumber</groupId>
+    	<artifactId>cucumber-java</artifactId>
+    	<version>6.10.4</version>
+	</dependency>
+	<dependency>
+	    <groupId>io.cucumber</groupId>
+	    <artifactId>cucumber-java</artifactId>
+	    <version>6.10.4</version>
+    	<scope>test</scope>
+	</dependency>
+	
+ 	<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-jvm-deps -->
+	<dependency>
+    	<groupId>io.cucumber</groupId>
+    	<artifactId>cucumber-jvm-deps</artifactId>
+    	<version>1.0.6</version>
+    	<scope>provided</scope>
+	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-testng -->
+	<dependency>
+    	<groupId>io.cucumber</groupId>
+    	<artifactId>cucumber-testng</artifactId>
+    	<version>6.10.4</version>
+	</dependency>
+	
+		<!-- https://mvnrepository.com/artifact/net.masterthought/cucumber-reporting -->
+	<dependency>
+    	<groupId>net.masterthought</groupId>
+    	<artifactId>cucumber-reporting</artifactId>
+    	<version>5.5.3</version>
+	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/info.cukes/gherkin -->
+	<dependency>
+	    <groupId>info.cukes</groupId>
+	    <artifactId>gherkin</artifactId>
+	    <version>2.12.2</version>
+	    <scope>provided</scope>
+	</dependency>
+	
+
+  	<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+	<dependency>
+    	<groupId>org.seleniumhq.selenium</groupId>
+    	<artifactId>selenium-java</artifactId>
+    	<version>3.141.59</version>
+	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+	<dependency>
+    	<groupId>org.testng</groupId>
+    	<artifactId>testng</artifactId>
+    	<version>7.4.0</version>
+    	<scope>test</scope>
+	</dependency>
+	
+	
+	<!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
+	<dependency>
+    	<groupId>io.github.bonigarcia</groupId>
+    	<artifactId>webdrivermanager</artifactId>
+    	<version>5.0.3</version>
+	</dependency>
+  </dependencies>
+  
+  <build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>3.0.0-M5</version>
+				<configuration>
+					<suiteXmlFiles>
+						<suiteXmlFile>testng.xml</suiteXmlFile>
+					</suiteXmlFiles>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>net.masterthought</groupId>
+				<artifactId>maven-cucumber-reporting</artifactId>
+				<version>5.5.4</version>
+				<executions>
+					<execution>
+						<id>execution</id>
+						<phase>verify</phase>
+						<goals>
+							<goal>generate</goal>
+						</goals>
+						<configuration>
+							<projectName>CucumberTestNG</projectName>
+							<outputDirectory>${project.build.directory}/cucumber-report-html</outputDirectory>
+							<cucumberOutput>${project.build.directory}/cucumber.json</cucumberOutput>
+							<inputDirectory>${project.build.directory}</inputDirectory>
+							<jsonFiles>
+								<param>*/.json</param>
+							</jsonFiles>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+	            <groupId>org.apache.maven.plugins</groupId>
+	            <artifactId>maven-compiler-plugin</artifactId>
+	            <configuration>
+	                <source>1.8</source>
+	                <target>1.8</target>
+	            </configuration>
+        	</plugin>
+        	  <plugin>
+                    <groupId>net.masterthought</groupId>
+                    <artifactId>maven-cucumber-reporting</artifactId>
+                    <version>2.8.0</version>
+                    <executions>
+                        <execution>
+                            <id>execution</id>
+                            <phase>verify</phase>
+                            <goals>
+                                <goal>generate</goal>
+                            </goals>
+                            <configuration>
+                                <projectName>CucumberWebGui</projectName>
+                                <outputDirectory>${project.build.directory}/cucumber-report-html</outputDirectory>
+                                <cucumberOutput>${project.build.directory}/cucumber.json</cucumberOutput>
+                            </configuration>
+                        </execution>
+                    </executions>
+                </plugin>
+		</plugins>
+		
+		
+	</build>
+    <properties>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+    </properties>
+</project>

@@ -1,0 +1,226 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>17/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Oct 11 13:04:14 IST 2021</td>
+</tr>
+<tr><td>Total time:</td><td>200 seconds (200290 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='DemoMyRunner.DemoTestRunner.runScenario()'><b>runScenario</b><br>Test class: DemoMyRunner.DemoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test AddTo Cart Button", "Optional[DemoBlaze Buy Function]"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;tbodyid&quot;]/div[1]/div/div/h4/a&quot;}
+  (Session info: chrome=94.0.4606.81)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-2T0C603P&apos;, ip: &apos;192.168.225.147&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\ADARSH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52084}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 39419de0b11900e629691b2b114eeff9
+*** Element info: {Using=xpath, value=//*[@id=&quot;tbodyid&quot;]/div[1]/div/div/h4/a}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.pages.BuyPage.selectItem(BuyPage.java:61)
+	at DemoStepDef.BuyItem.user_selects_product(BuyItem.java:34)
+	at ?.User Selects Product(file:///C:/Users/Adarsh2299/eclipse-workspace/DemoBlaze/./src/test/java/DemoFeatures/Buy.feature:7)
+... Removed 4 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1395725953", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1395725953'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;tbodyid&quot;]/div[1]/div/div/h4/a&quot;}
+  (Session info: chrome=94.0.4606.81)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-2T0C603P&apos;, ip: &apos;192.168.225.147&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\ADARSH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52084}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 39419de0b11900e629691b2b114eeff9
+*** Element info: {Using=xpath, value=//*[@id=&quot;tbodyid&quot;]/div[1]/div/div/h4/a}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.pages.BuyPage.selectItem(BuyPage.java:61)
+	at DemoStepDef.BuyItem.user_selects_product(BuyItem.java:34)
+	at ?.User Selects Product(file:///C:/Users/Adarsh2299/eclipse-workspace/DemoBlaze/./src/test/java/DemoFeatures/Buy.feature:7)
+</pre></div></td>
+<td>16</td>
+<td>DemoMyRunner.DemoTestRunner@58d75e99</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='DemoMyRunner.DemoTestRunner.runScenario()'><b>runScenario</b><br>Test class: DemoMyRunner.DemoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To validate the successfully Navigation to Demo_blaze Login page", "Optional[DemoBlaze Login Functionality]"</td>
+<td></td>
+<td>13</td>
+<td>DemoMyRunner.DemoTestRunner@58d75e99</td></tr>
+<tr>
+<td title='DemoMyRunner.DemoTestRunner.runScenario()'><b>runScenario</b><br>Test class: DemoMyRunner.DemoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test online Payment Fuction", "Optional[DemoBlaze Buy Function]"</td>
+<td></td>
+<td>13</td>
+<td>DemoMyRunner.DemoTestRunner@58d75e99</td></tr>
+<tr>
+<td title='DemoMyRunner.DemoTestRunner.runScenario()'><b>runScenario</b><br>Test class: DemoMyRunner.DemoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test Buy PopUp Window", "Optional[DemoBlaze Buy Function]"</td>
+<td></td>
+<td>9</td>
+<td>DemoMyRunner.DemoTestRunner@58d75e99</td></tr>
+<tr>
+<td title='DemoMyRunner.DemoTestRunner.runScenario()'><b>runScenario</b><br>Test class: DemoMyRunner.DemoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test Login Functionality", "Optional[DemoBlaze Login Functionality]"</td>
+<td></td>
+<td>18</td>
+<td>DemoMyRunner.DemoTestRunner@58d75e99</td></tr>
+<tr>
+<td title='DemoMyRunner.DemoTestRunner.runScenario()'><b>runScenario</b><br>Test class: DemoMyRunner.DemoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To validate that user can filter products by MONITORS category", "Optional[DemoBlaze Search Functionality]"</td>
+<td></td>
+<td>9</td>
+<td>DemoMyRunner.DemoTestRunner@58d75e99</td></tr>
+<tr>
+<td title='DemoMyRunner.DemoTestRunner.runScenario()'><b>runScenario</b><br>Test class: DemoMyRunner.DemoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test Login Functionality with invalid data.", "Optional[DemoBlaze Login Functionality]"</td>
+<td></td>
+<td>10</td>
+<td>DemoMyRunner.DemoTestRunner@58d75e99</td></tr>
+<tr>
+<td title='DemoMyRunner.DemoTestRunner.runScenario()'><b>runScenario</b><br>Test class: DemoMyRunner.DemoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To validate the sucessful Navigation to Demo_blaze Signup page", "Optional[DemoBlaze Registration Functionality]"</td>
+<td></td>
+<td>4</td>
+<td>DemoMyRunner.DemoTestRunner@58d75e99</td></tr>
+<tr>
+<td title='DemoMyRunner.DemoTestRunner.runScenario()'><b>runScenario</b><br>Test class: DemoMyRunner.DemoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test Registration Functionality", "Optional[DemoBlaze Registration Functionality]"</td>
+<td></td>
+<td>8</td>
+<td>DemoMyRunner.DemoTestRunner@58d75e99</td></tr>
+<tr>
+<td title='DemoMyRunner.DemoTestRunner.runScenario()'><b>runScenario</b><br>Test class: DemoMyRunner.DemoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To validate that add to cart button is functional.", "Optional[DemoBlaze Search Functionality]"</td>
+<td></td>
+<td>16</td>
+<td>DemoMyRunner.DemoTestRunner@58d75e99</td></tr>
+<tr>
+<td title='DemoMyRunner.DemoTestRunner.runScenario()'><b>runScenario</b><br>Test class: DemoMyRunner.DemoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To validate that user can filter products by PHONE category", "Optional[DemoBlaze Search Functionality]"</td>
+<td></td>
+<td>7</td>
+<td>DemoMyRunner.DemoTestRunner@58d75e99</td></tr>
+<tr>
+<td title='DemoMyRunner.DemoTestRunner.runScenario()'><b>runScenario</b><br>Test class: DemoMyRunner.DemoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test Buy Fuction for Invalid Address", "Optional[DemoBlaze Buy Function]"</td>
+<td></td>
+<td>7</td>
+<td>DemoMyRunner.DemoTestRunner@58d75e99</td></tr>
+<tr>
+<td title='DemoMyRunner.DemoTestRunner.runScenario()'><b>runScenario</b><br>Test class: DemoMyRunner.DemoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To validate the sucessful Navigation to Demo_blaze Confirm booking page.", "Optional[DemoBlaze Confirm booking Functionality]"</td>
+<td></td>
+<td>0</td>
+<td>DemoMyRunner.DemoTestRunner@58d75e99</td></tr>
+<tr>
+<td title='DemoMyRunner.DemoTestRunner.runScenario()'><b>runScenario</b><br>Test class: DemoMyRunner.DemoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test Buy Fuction for Invalid CreditCard", "Optional[DemoBlaze Buy Function]"</td>
+<td></td>
+<td>9</td>
+<td>DemoMyRunner.DemoTestRunner@58d75e99</td></tr>
+<tr>
+<td title='DemoMyRunner.DemoTestRunner.runScenario()'><b>runScenario</b><br>Test class: DemoMyRunner.DemoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test Login Functionality", "Optional[DemoBlaze Login Functionality]"</td>
+<td></td>
+<td>19</td>
+<td>DemoMyRunner.DemoTestRunner@58d75e99</td></tr>
+<tr>
+<td title='DemoMyRunner.DemoTestRunner.runScenario()'><b>runScenario</b><br>Test class: DemoMyRunner.DemoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test Registration Functionality", "Optional[DemoBlaze Registration Functionality]"</td>
+<td></td>
+<td>11</td>
+<td>DemoMyRunner.DemoTestRunner@58d75e99</td></tr>
+<tr>
+<td title='DemoMyRunner.DemoTestRunner.runScenario()'><b>runScenario</b><br>Test class: DemoMyRunner.DemoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Test Login Functionality with invalid data.", "Optional[DemoBlaze Login Functionality]"</td>
+<td></td>
+<td>13</td>
+<td>DemoMyRunner.DemoTestRunner@58d75e99</td></tr>
+<tr>
+<td title='DemoMyRunner.DemoTestRunner.runScenario()'><b>runScenario</b><br>Test class: DemoMyRunner.DemoTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To validate that user can filter products by LAPTOP category", "Optional[DemoBlaze Search Functionality]"</td>
+<td></td>
+<td>7</td>
+<td>DemoMyRunner.DemoTestRunner@58d75e99</td></tr>
+</table><p>
+</body>
+</html>
